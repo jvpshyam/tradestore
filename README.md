@@ -41,9 +41,13 @@ Scheduler to update Expiry trades , runs every day . Logs looks as below
 
 [
 2021-06-26 00:00:00.024  INFO 17020 --- [   scheduling-1] c.d.t.scheduler.TradesExpiryScheduler    : In updateTradeExpiry method TradesExpiryScheduler
+
 2021-06-26 00:00:00.026  INFO 17020 --- [   scheduling-1] c.d.t.scheduler.TradesExpiryScheduler    : Scheduler start time : 00:00:00.026
+
 2021-06-26 00:00:00.027  INFO 17020 --- [   scheduling-1] c.d.t.service.TradesServiceImpl          : In updateTradeExpiry of TradesServiceImpl
+
 2021-06-26 00:00:00.027  INFO 17020 --- [   scheduling-1] com.db.tradestore.dao.TradesDAOImpl      : Inside findAll method TradesDAOImpl
+
 2021-06-26 00:00:00.041  INFO 17020 --- [   scheduling-1] c.d.t.scheduler.TradesExpiryScheduler    : Scheduler end time : 00:00:00.041
 ]
  
