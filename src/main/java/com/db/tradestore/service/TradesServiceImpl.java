@@ -31,17 +31,6 @@ public class TradesServiceImpl implements ITradesService {
     }
 
     /**
-     * Saves Trade came in the request after validation
-     * @param trade
-     * @return trade
-     */
-    /*public Trade saveTrade(Trade trade) {
-        logger.info("In saveTrade of TradesServiceImpl");
-        trade.setCreatedDate(LocalDate.now());
-        return tradesDAO.save(trade);
-    }*/
-
-    /**
      * Automatically update the Expiry flag if trade crosses Maturity date
      */
     public void updateTradeExpiry() {
@@ -69,25 +58,6 @@ public class TradesServiceImpl implements ITradesService {
          return true;
     }
 
-    /**
-     * Checking if incoming trade is valid or not
-     * checks Maturity date and version number
-     */
-    /*public boolean isTradeValid(Trade trade) {
-        if (compareTradeMaturityDate(trade)) {
-            Optional<Trade> tradeFromDB = tradesDAO.findById(trade.getTradeId());
-            if (tradeFromDB.isPresent()) {
-                // checking version number with DB record
-                if (trade.getVersion() >= tradeFromDB.get().getVersion()) {
-                    return true;
-                }
-                return false;
-            } else {
-                return true;
-            }
-        }
-        return false;
-    }*/
 
     /**
      * Saves Trade came in the request after validation

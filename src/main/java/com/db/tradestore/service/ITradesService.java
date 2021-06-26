@@ -13,6 +13,4 @@ public interface ITradesService {
 
     public void updateTradeExpiry();
 
-    //public boolean isTradeValid(Trade trade);
-
 }

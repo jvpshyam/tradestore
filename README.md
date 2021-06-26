@@ -38,6 +38,7 @@ GET http://localhost:8080/v1/trades/all
 Return the json of trade saved (Http Status 200). If the there are no trades the status code returned is 404.
 
 Scheduler to update Expiry trades , runs every day . Logs looks as below
+
 [
 2021-06-26 00:00:00.024  INFO 17020 --- [   scheduling-1] c.d.t.scheduler.TradesExpiryScheduler    : In updateTradeExpiry method TradesExpiryScheduler
 2021-06-26 00:00:00.026  INFO 17020 --- [   scheduling-1] c.d.t.scheduler.TradesExpiryScheduler    : Scheduler start time : 00:00:00.026
